@@ -1,0 +1,123 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.hero-left {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  line-height: 1.1;
+}
+
+.hero-left h3 {
+  color: #090909;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.hero-left p {
+  color: #171717;
+  font-size: 6vw;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Love Ya Like A Sister Static";
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-hand-icon img {
+  width: 70px;
+}
+
+.hero-latest-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 80%;
+  max-width: 300px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 30px;
+  background: #ff4141;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-right {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-right img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-left {
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .her0-left h3 {
+    font-size: 0.8;
+  }
+
+  .hero-left p {
+    font-size: 12vw;
+  }
+
+  .hero-latest-button {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .hero-hand-icon img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-left p {
+    font-size: 14vw;
+  }
+  .hero-left h3 {
+    font-size: 0.6rem;
+  }
+
+  .hero-latest-button {
+    font-size: 1rem;
+    height: 45px;
+  }
+}
