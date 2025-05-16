@@ -208,7 +208,7 @@ app.post("/addproduct", async (req, res) => {
     id,
     name: req.body.name,
     description: req.body.description,
-    image: req.body.image,
+    image: `/images/${image_url}`,
     category: req.body.category,
     new_price: req.body.new_price,
     old_price: req.body.old_price,
