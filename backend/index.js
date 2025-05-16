@@ -41,17 +41,7 @@ app.post("/upload", upload.single("product"), (req, res) => {
   });
 });
 
-app.get("/fix-image-urls", async (req, res) => {
-  try {
-    const products = await Product.find({});
 
-    for (let product of products) {
-      if (product.image.includes("localhost:4000")) {
-        const filename = product.image.split("/images/")[1];
-        product.image = `/images/${filename}`;
-        await product.save();
-      }
-    }
 
     res.send("Image URLs updated successfully!");
   } catch (error) {
