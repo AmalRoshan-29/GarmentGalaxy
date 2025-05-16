@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
+const fs = require("fs");
 const cors = require("cors");
 const port = process.env.PORT || 4000;
 
@@ -14,6 +15,11 @@ app.use(cors());
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log("MongoDB error:", err));
+
+const dir="./upload/images";
+if(!fs.existsSync(dir)){
+  fs.mkdirSync(dir,{recursive:true});
+}
 
 // Image Storage Engine
 const storage = multer.diskStorage({
