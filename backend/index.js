@@ -43,13 +43,6 @@ app.post("/upload", upload.single("product"), (req, res) => {
 
 
 
-    res.send("Image URLs updated successfully!");
-  } catch (error) {
-    console.error("Error fixing image URLs:", error);
-    res.status(500).send("Server error");
-  }
-});
-
 // Route for Images folder
 app.use("/images", express.static("upload/images"));
 
