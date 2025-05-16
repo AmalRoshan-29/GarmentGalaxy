@@ -16,7 +16,7 @@ const RelatedProduct = () => {
               key={i}
               id={item.id}
               name={item.name}
-              image={item.image}
+              image={`https://garmentgalaxy-backend.onrender.com/images/${item.image}`}
               new_price={`$${item.new_price}`}
               old_price={`$${item.old_price}`}
             />
