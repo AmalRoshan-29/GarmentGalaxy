@@ -11,9 +11,10 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect(
-  "mongodb+srv://amalroshanar2002:azzeummuezza@cluster0.0or0pks.mongodb.net/e-commerce"
-);
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.log("MongoDB error:", err));
+
 
 //Image Storage Engine
 const storage = multer.diskStorage({
