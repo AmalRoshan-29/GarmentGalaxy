@@ -12,10 +12,10 @@ const ProductDisplay = (props) => {
     <div className="productdisplay">
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
-        <img src={`https://garmentgalaxy-backend.onrender.com/${product.image}`} alt={product.name} />
-<img src={`https://garmentgalaxy-backend.onrender.com/${product.image}`} alt={product.name} />
-<img src={`https://garmentgalaxy-backend.onrender.com/${product.image}`} alt={product.name} />
-<img src={`https://garmentgalaxy-backend.onrender.com/${product.image}`} alt={product.name} />
+        <img src={`https://garmentgalaxy-backend.onrender.com/images/${product.image}`} alt={product.name} />
+<img src={`https://garmentgalaxy-backend.onrender.com/images/${product.image}`} alt={product.name} />
+<img src={`https://garmentgalaxy-backend.onrender.com/images/${product.image}`} alt={product.name} />
+<img src={`https://garmentgalaxy-backend.onrender.com/images/${product.image}`} alt={product.name} />
  
         </div>
         <div className="productdisplay-img">
